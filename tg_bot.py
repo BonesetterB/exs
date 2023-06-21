@@ -36,7 +36,7 @@ async def send_messeng(chat_id,update):
     url = f'https://api.telegram.org/bot{TOKEN}/sendMessage'
     params={
         'chat_id': chat_id,
-        'text': "HELLO ITS ME MARIOO BOOT XUIII"
+        'text': "HELLO ITS ME MARIOO"
     }
     print(type(chat_id))
     response = requests.post(url, params)
@@ -66,7 +66,7 @@ async def help_comand(update:Updater,context:ContextTypes.DEFAULT_TYPE):
 
 async def custom_comand(update:Updater,context:ContextTypes.DEFAULT_TYPE):
     print('CustomSEXS')
-    await update.message.reply_text('Ого ніхуя собі')
+    await update.message.reply_text('Кастомна команда, я крутий')
 
 def handler(text):
     pass
